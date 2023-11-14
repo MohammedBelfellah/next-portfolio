@@ -1,6 +1,6 @@
 export const  headerLink = [
   {
-    name: "Belfellah .dev",
+    name: "Belfellah.dev",
     hash: "#home",
   },
   {

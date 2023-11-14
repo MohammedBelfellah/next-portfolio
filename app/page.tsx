@@ -1,4 +1,5 @@
 
+import Intro from "./components/intro";
 import { Post } from "./lib/interface";
 import { client} from "./lib/sanity";
 
@@ -24,9 +25,10 @@ async function getData() {
 export default  function Home() {
 
   return (
-    <>
-    {/* <Header/>
-    <Intro/> */}
-    </>
+    <main
+    className="flex flex-col items-center px-4"
+    >
+      <Intro/>  
+    </main>
   )
 }
