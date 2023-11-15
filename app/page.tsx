@@ -1,8 +1,11 @@
 
 import About from "./components/about";
+import Contact from "./components/contact";
+import Experience from "./components/experience";
 import Intro from "./components/intro";
 import Projects from "./components/projects";
 import SectionDivider from "./components/section-devider";
+import Skills from "./components/skills";
 import { Post } from "./lib/interface";
 import { client} from "./lib/sanity";
 
@@ -35,6 +38,9 @@ export default  function Home() {
       <SectionDivider/>
       <About/>
       <Projects/>
+      <Skills/>
+      <Experience/>
+      <Contact/>
     </main>
   )
 }

@@ -6,6 +6,7 @@ import { projectsData } from "../lib/data";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 
+import { MdWeb } from "react-icons/md";
 type ProjectProps = (typeof projectsData)[number];
 
 export default function Project({
@@ -47,6 +48,24 @@ export default function Project({
               </li>
             ))}
           </ul>
+          {/* btn action  */}
+          <div className="text-center">
+            {/* Source Code Button */}
+            <button
+              onClick={() => window.open('#', '_blank')}
+              className=" bg-white shadow-md text-black px-6 mt-5 rounded-md mr-2 hover:"
+            >
+              Code 
+            </button>
+
+            {/* Live Demo Button */}
+            <button
+              onClick={() => window.open('#', '_blank')}
+              className=" bg-white shadow-md text-black px-6 mt-0 rounded-md hover:"
+            >
+              Live 
+            </button>
+          </div>
         </div>
 
         <Image
