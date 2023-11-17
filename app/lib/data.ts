@@ -22,7 +22,7 @@ import { SiTailwindcss } from "react-icons/si";
 
 export const  headerLink = [
   {
-    name: "Belfellah.dev",
+    name:"Belfellah.dev",
     hash: "#home",
   },
   {
@@ -51,7 +51,7 @@ export const projectsData = [
   {
     title: "travel advisor",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
+      "Effortless travel planning: React, Next.js, IPAs, CSS, and Google Maps create a responsive, user-friendly adventure at your fingertips.",
     tags: ["React", "Next.js", "IPAs", "Css","Google maps"],
     imageUrl: "/traveladvisor.png",
     link: "https://travle-adviser.netlify.app/",
@@ -60,7 +60,7 @@ export const projectsData = [
   {
     title: "IP Address Tracker",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
+      "Explore IP addresses effortlessly. React, Next.js, and IPAS power our sleek site for intuitive, precise digital navigation.",
     tags: ["React", "Next.js","IPAS" ,"Css", "Html"],
     imageUrl: "/iptracker.png",
     link: "https://ip-address-tracker-five-taupe.vercel.app/",
@@ -69,7 +69,7 @@ export const projectsData = [
   {
     title: "todo list",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
+      "Streamlined Todo List: React, MUI, Next.js, CSS, LocalStorage. Simplify tasks with this efficient, responsive web solution",
     tags: ["React", "MUI", "Next.js", "Css", "localStorage"],
     imageUrl: "/todoList.png",
     link: "https://todo-appfvd.vercel.app/",
