@@ -1,7 +1,7 @@
 // Import necessary libraries and components
 "use client";
 import React from "react";
-import SectionHeading from "./Section-Heading";
+import SectionHeading from "./sectionHeading";
 import { useSectionInView } from "../lib/hooks";
 import Image from "next/image";
 
@@ -12,7 +12,7 @@ export default function Experience() {
   return (
     <section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
       <div className=" mx-5">
-        <SectionHeading>My experience</SectionHeading>
+        <SectionHeading>My education</SectionHeading>
         <div className="relative px-6 flex flex-col space-y-8">
           <div
             className="absolute z-0 w-2 h-full bg-white shadow-md inset-0 left-17 md:mx-auto md:right-0 md:left-0"

@@ -3,8 +3,22 @@ import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
+// icones 
+import {
+  FaHtml5,
+  FaCss3,
+  FaJs,
+  FaReact,
+  FaNode,
+  FaGit,
+  FaSass,
+  FaWordpress,
+  FaBootstrap,
+  FaLinkedin,
+  FaTwitter,
+} from 'react-icons/fa';
+import { SiTailwindcss } from "react-icons/si";
 
 export const  headerLink = [
   {
@@ -35,44 +49,50 @@ export const  headerLink = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "travel advisor",
     description:
       "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+    tags: ["React", "Next.js", "IPAs", "Css","Google maps"],
+    imageUrl: "/traveladvisor.png",
+    link: "https://travle-adviser.netlify.app/",
+    codeLink:"https://github.com/MohammedBelfellah/travle-adviser"
   },
   {
-    title: "rmtDev",
-    description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
-  },
-  {
-    title: "Word Analytics",
+    title: "IP Address Tracker",
     description:
       "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+    tags: ["React", "Next.js","IPAS" ,"Css", "Html"],
+    imageUrl: "/iptracker.png",
+    link: "https://ip-address-tracker-five-taupe.vercel.app/",
+    codeLink:"https://github.com/MohammedBelfellah/IP-Address-Tracker"
   },
+  {
+    title: "todo list",
+    description:
+      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
+    tags: ["React", "MUI", "Next.js", "Css", "localStorage"],
+    imageUrl: "/todoList.png",
+    link: "https://todo-appfvd.vercel.app/",
+    codeLink:"https://github.com/MohammedBelfellah/todo-appfvd"
+  },
+  
 ] as const;
 
 
-  export const skillsData = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "Next.js",
-  "Node.js",
-  "Git",
-  "Tailwind",
-  "bootstrap",
-  "sanity",
-  "wordpress",
-  "Material UI",
-  "Framer Motion",
+export const skillsData = [
+  { name: 'HTML', icon: React.createElement<typeof FaHtml5>(FaHtml5) },
+  { name: 'CSS', icon: React.createElement<typeof FaCss3>(FaCss3) },
+  { name: 'JavaScript', icon: React.createElement<typeof FaJs>(FaJs) },
+  { name: 'TypeScript', icon: React.createElement('img', { src: '/typescript.png', alt: 'typescript' ,style: { width: '32px', height: '32px' }}) },
+  { name: 'React', icon: React.createElement<typeof FaReact>(FaReact) },
+  { name: 'Next.js', icon: React.createElement('img', { src: 'nextjs.png', alt: 'nextjs' ,style: { width: '32px', height: '32px' }})},
+  { name: 'Node.js', icon: React.createElement<typeof FaNode>(FaNode) },
+  { name: 'Git', icon: React.createElement<typeof FaGit>(FaGit) },
+  { name: 'Tailwind', icon:React.createElement<typeof SiTailwindcss>(SiTailwindcss)},
+  { name: 'Bootstrap', icon: React.createElement<typeof FaBootstrap>(FaBootstrap) },
+  { name: 'Sass', icon: React.createElement<typeof FaSass>(FaSass) },
+  { name: 'WordPress', icon: React.createElement<typeof FaWordpress>(FaWordpress) },
+  { name: 'Material UI', icon: React.createElement('img', { src: 'material-ui.svg', alt: 'nextjs' ,style: { width: '32px', height: '32px' }})},
 ] as const;
 
 export const experiencesData = [

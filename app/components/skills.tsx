@@ -4,7 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { useSectionInView } from "../lib/hooks";
 import { skillsData } from "../lib/data";
-import SectionHeading from "./Section-Heading";
+import SectionHeading from "./sectionHeading";
 import { FaGithubSquare  } from "react-icons/fa";
 const fadeInAnimationVariants = {
 initial: {
@@ -33,7 +33,7 @@ return (
     <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
         {skillsData.map((skill, index) => (
         <motion.li
-            className="bg-white borderBlack flex rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80"
+            className="bg-white borderBlack  flex items-center space-x-2 rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80"
             key={index}
             variants={fadeInAnimationVariants}
             initial="initial"
@@ -43,7 +43,10 @@ return (
             }}
             custom={index}
         >
-            {skill}
+            
+            <span className="text-[35px]">{skill.icon}</span>
+            <span className="">{skill.name}</span>
+            
         </motion.li>
         ))}
     </ul>

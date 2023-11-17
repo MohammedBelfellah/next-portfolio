@@ -14,6 +14,8 @@ export default function Project({
   description,
   tags,
   imageUrl,
+  link,
+  codeLink
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -52,7 +54,7 @@ export default function Project({
           <div className="text-center">
             {/* Source Code Button */}
             <button
-              onClick={() => window.open('#', '_blank')}
+              onClick={() => window.open(codeLink, '_blank')}
               className=" bg-white shadow-md text-black px-6 mt-5 rounded-md mr-2 hover:"
             >
               Code 
@@ -60,7 +62,7 @@ export default function Project({
 
             {/* Live Demo Button */}
             <button
-              onClick={() => window.open('#', '_blank')}
+              onClick={() => window.open(link, '_blank')}
               className=" bg-white shadow-md text-black px-6 mt-0 rounded-md hover:"
             >
               Live 
@@ -70,9 +72,11 @@ export default function Project({
 
         <Image
           src={imageUrl}
+          width={400}
+          height={400}
           alt="Project I worked on"
           quality={95}
-          className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl
+          className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] h-[18rem] rounded-t-lg shadow-2xl
         transition 
         group-hover:scale-[1.04]
         group-hover:-translate-x-3

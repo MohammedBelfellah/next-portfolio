@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
-import SectionHeading from "./Section-Heading";
 import { useSectionInView } from "../lib/hooks";
+import SectionHeading from "./sectionHeading";
 
 function About() {
   const { ref } = useSectionInView("About");
@@ -16,30 +16,26 @@ function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        After graduating with a degree in{" "}
-        <span className="font-medium">Accounting</span>, I decided to pursue my
-        passion for programming. I enrolled in a coding bootcamp and learned{" "}
-        <span className="font-medium">full-stack web development</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
-        is{" "}
-        <span className="font-medium">
-          React, Next.js, Node.js, and MongoDB
-        </span>
-        . I am also familiar with TypeScript and Prisma. I am always looking to
-        learn new technologies. I am currently looking for a{" "}
-        <span className="font-medium">full-time position</span> as a software
-        developer.
-      </p>
+        Embarking on my academic journey at School of Education and Training In Mathematics 
+        as a mathematics student,{" "}
+        <span className="font-medium">I discovered</span> a deep passion for web development. 
+        While pursuing my license in Mathematics,
+        I dedicated myself to mastering the intricacies of HTML, CSS, and JavaScript,
+        with a particular
+        <span className="font-medium "> focus on React.js </span>.{" "}
 
+        This focus allowed me to create visually captivating websites. 
+        During a transformative internship as a Website Design intern, 
+        <span className="italic"> I translated theoretical knowledge into practical skills, </span>
+        implementing designs and
+        ensuring their functionality through rigorous quality assurance tests
+      </p>
+ 
       <p>
-        <span className="italic">When I'm not coding</span>, I enjoy playing
-        video games, watching movies, and playing with my dog. I also enjoy{" "}
-        <span className="font-medium">learning new things</span>. I am currently
-        learning about{" "}
-        <span className="font-medium">history and philosophy</span>. I'm also
-        learning how to play the guitar.
+        <span className="italic">When not immersed in coding</span>, I find joy in playing video games,
+        watching movies, and challenging myself as a chess player. {" "}
+        The pursuit of continuous learning extends to refining my skills on the chessboard and 
+        <span className="font-medium"> passionately following my favorite football team</span> , FC Barcelona.
       </p>
     </motion.section>
   )
