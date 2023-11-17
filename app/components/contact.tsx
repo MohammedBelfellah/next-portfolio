@@ -6,7 +6,6 @@ import { motion } from "framer-motion";
 import { useSectionInView } from "../lib/hooks";
 import emailjs from '@emailjs/browser';
 import { FaPaperPlane } from "react-icons/fa";
-import toast from 'react-hot-toast';
 
 export default function Contact() {
 const { ref } = useSectionInView("Contact");
@@ -24,9 +23,9 @@ const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
             .then((result) => {
                 
                 console.log(result.text);
-                toast.success("Email Successfully sended!");
+                alert("Email Successfully sended!");
             }, (error) => {
-                toast.error('This is an error!');
+                alert('This is an error!');
                 console.log(error.text);
             });
     } else {
